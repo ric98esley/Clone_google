@@ -3,73 +3,31 @@
     padding: 0;
     margin: 0;
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 html {
     font-size: 62.5%;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header {
-    height: 10vh;
+    height: 60px;
     width: 100vw;
 }
-img {
-    width: auto;
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-items {
+    width: 250px;
     height: auto;
-}
-.nav {
-    right: 0;
-}
-.nav ul {
-    justify-content: flex-end;
     display: flex;
-    font-size: 1.6rem;
-    text-decoration: none;
-}
-.nav .nav-items__links:nth-last-child(2) {
-    width: 5%;
-    background-image: url(./img/aplication.PNG);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: auto;
-}
-.nav .nav-items__links:last-child {
-    width: 3%;
-    background-image: url(./img/usuario.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: auto;
-}
-.nav .nav-items__links {
-    display: flex;
-    justify-content: flex-end;
-    width: 10%;
     list-style: none;
-    align-items: center;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    height: 75vh;
-    width: 100vw;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.icon-search:before {
-    content: "\e986";
-}
-.icon-mic:before {
-    content: "\e91e";
-}
-footer {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    font-size: 1.6rem;
-    text-decoration: none;
-    list-style: none;
-}
-footer ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
+nav .nav-items a {
+    margin-right: 10px;
+    color: #000000;
 }
